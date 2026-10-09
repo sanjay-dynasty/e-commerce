@@ -1,0 +1,31 @@
+@import url('https://googleapis.com');
+@import "tailwindcss";
+
+@theme {
+  --color-theoPink: #d9658b;
+  --color-theoTeal: #a3d9cf;
+}
+
+body { 
+  background-color: #ffffff; 
+  color: #333333; 
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif-theobroma {
+  font-family: 'Playfair Display', serif;
+}
+
+.active-category-line {
+  position: relative;
+}
+.active-category-line::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #333333;
+}
